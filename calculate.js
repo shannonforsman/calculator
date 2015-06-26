@@ -29,6 +29,9 @@ Calculate.prototype.math = function (num) {
 }
 
 Calculate.prototype.operators = function (operator) {
+  if (this.numStr === '') {
+    return this.sum
+  }
   if (operator === '=') {
     this.numInt = parseFloat(this.numStr)
     this.sum = this.operatorList[this.operator](this.numInt, this.sum)
