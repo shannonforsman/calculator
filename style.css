@@ -100,3 +100,9 @@ main:after {
 .operators div[data-operator="-"] {
   font-size: 40px;
 }
+
+@media (max-width: 450px) {
+  main {
+    width: 90%;
+  }
+}
